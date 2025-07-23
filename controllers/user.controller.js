@@ -40,7 +40,7 @@ const createUser = async(req, res, next)=>{
         payload["backgroundPics"] = backgroundPics.secure_url;
 
         console.log(payload, " is the updated payload");
-        console.log(profilePics.secure_url, backgroundPics.secure_url, " are the secure URLS");
+        //console.log(profilePics.secure_url, backgroundPics.secure_url, " are the secure URLS");
 
         //creating instance and saving to database
         const newUser = new userModel({...payload});
